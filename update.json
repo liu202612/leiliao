@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  49,
     "versionName":  "1.3.2",
-    "buildId":  "13f532d99019294dd7dc35347e6e6f1e",
-    "publishedAt":  1782741888841,
+    "buildId":  "7b14eab4592a6ad4fa1f4935affca096",
+    "publishedAt":  1782744674193,
     "changelog":  "v1.3.2: fix startup crash from exact alarm permission",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=13f532d99019294dd7dc35347e6e6f1e",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7b14eab4592a6ad4fa1f4935affca096",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=13f532d99019294dd7dc35347e6e6f1e",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=13f532d99019294dd7dc35347e6e6f1e",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=13f532d99019294dd7dc35347e6e6f1e"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7b14eab4592a6ad4fa1f4935affca096",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7b14eab4592a6ad4fa1f4935affca096",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=7b14eab4592a6ad4fa1f4935affca096"
                       ],
     "hasUpdate":  false
 }
