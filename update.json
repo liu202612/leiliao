@@ -3,7 +3,7 @@
     "versionCode":  47,
     "versionName":  "1.3.0",
     "buildId":  "6439d51b6ba2d6a2ceee7123eb857270",
-    "changelog":  "Hot update: remove custom update source UI",
+    "changelog":  "同版本热更新：通讯录服务号下移除雷聊支付",
     "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk",
     "mirrorApkUrls":  [
                           "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk",
