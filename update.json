@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  48,
     "versionName":  "1.3.1",
-    "buildId":  "efed1ca76e5ceaa3d6fd16b4de80acd2",
-    "publishedAt":  1782730963163,
-    "changelog":  "v1.3.1: GitHub auto update, safer hot update, contacts cleanup",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=efed1ca76e5ceaa3d6fd16b4de80acd2",
+    "buildId":  "35da041d53004346e0c3905367d702a7",
+    "publishedAt":  1782731272168,
+    "changelog":  "v1.3.1: fix CDN stale manifest, prefer ghproxy update source",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=35da041d53004346e0c3905367d702a7",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=efed1ca76e5ceaa3d6fd16b4de80acd2",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=efed1ca76e5ceaa3d6fd16b4de80acd2",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=efed1ca76e5ceaa3d6fd16b4de80acd2"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=35da041d53004346e0c3905367d702a7",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=35da041d53004346e0c3905367d702a7",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=35da041d53004346e0c3905367d702a7"
                       ],
     "hasUpdate":  false
 }
