@@ -2,8 +2,8 @@
     "ok":  true,
     "versionCode":  47,
     "versionName":  "1.3.0",
-    "buildId":  "91eb708ae0f14347489101365e77c8c5",
-    "changelog":  "鍚岀増鏈儹鏇存柊锛氫慨澶嶆鏌ユ洿鏂扮綉缁滃吋瀹癸紝澧炲姞鍥藉唴闀滃儚",
+    "buildId":  "74483d2ba1d873f03c1bfa32e1841492",
+    "changelog":  "Hot update: fix false new-version prompt when already latest",
     "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk",
     "mirrorApkUrls":  [
                           "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk",
