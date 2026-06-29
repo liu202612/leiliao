@@ -2,8 +2,8 @@
     "ok":  true,
     "versionCode":  47,
     "versionName":  "1.3.0",
-    "buildId":  "16c6d6cb8f1576b98ee07f5402352427",
-    "changelog":  "Leiliao v1.1.7: fix scan crash, team update cards, inline file/redpacket QR",
+    "buildId":  "39a8636dcefd9f1fae4072d8d5866393",
+    "changelog":  "Hot update: remove custom update source UI",
     "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk",
     "mirrorApkUrls":  [
                           "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk",
