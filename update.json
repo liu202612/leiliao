@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  49,
     "versionName":  "1.3.2",
-    "buildId":  "7cff827a88500b9cda4c64252617a311",
-    "publishedAt":  1782731852493,
-    "changelog":  "v1.3.2: switch account page redesign, multi-account save and switch",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7cff827a88500b9cda4c64252617a311",
+    "buildId":  "f3bfae706a4098618dbb013f4620e5fb",
+    "publishedAt":  1782732416417,
+    "changelog":  "v1.3.2: nightly step rank push at 20:30, team hot-update push",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=f3bfae706a4098618dbb013f4620e5fb",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7cff827a88500b9cda4c64252617a311",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7cff827a88500b9cda4c64252617a311",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=7cff827a88500b9cda4c64252617a311"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=f3bfae706a4098618dbb013f4620e5fb",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=f3bfae706a4098618dbb013f4620e5fb",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=f3bfae706a4098618dbb013f4620e5fb"
                       ],
     "hasUpdate":  false
 }
