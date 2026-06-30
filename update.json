@@ -1,15 +1,15 @@
 {
     "ok":  true,
-    "versionCode":  50,
+    "versionCode":  51,
     "versionName":  "1.3.2",
-    "buildId":  "52972ee427708c9aba6a03f4bb1dfd17",
-    "publishedAt":  1782807481244,
+    "buildId":  "816ad85d08ddc2e18bcefbe7424c151d",
+    "publishedAt":  1782808160488,
     "changelog":  "v1.3.2: fix 1:1 chat delivery and target id resolve",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=52972ee427708c9aba6a03f4bb1dfd17",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=816ad85d08ddc2e18bcefbe7424c151d",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=52972ee427708c9aba6a03f4bb1dfd17",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=52972ee427708c9aba6a03f4bb1dfd17",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=52972ee427708c9aba6a03f4bb1dfd17"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=816ad85d08ddc2e18bcefbe7424c151d",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=816ad85d08ddc2e18bcefbe7424c151d",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=816ad85d08ddc2e18bcefbe7424c151d"
                       ],
     "hasUpdate":  false
 }
