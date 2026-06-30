@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  49,
     "versionName":  "1.3.2",
-    "buildId":  "04453d053c796575b8c5a7d42cc77cb0",
-    "publishedAt":  1782781883031,
-    "changelog":  "v1.3.2 hotfix: AI assistant context chat with 20-turn history persistence",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04453d053c796575b8c5a7d42cc77cb0",
+    "buildId":  "9f96e545b04e20c41efafe5f74126c7c",
+    "publishedAt":  1782782415684,
+    "changelog":  "v1.3.2 hotfix: AI assistant fullscreen purple header without title bar",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9f96e545b04e20c41efafe5f74126c7c",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04453d053c796575b8c5a7d42cc77cb0",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04453d053c796575b8c5a7d42cc77cb0",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=04453d053c796575b8c5a7d42cc77cb0"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9f96e545b04e20c41efafe5f74126c7c",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9f96e545b04e20c41efafe5f74126c7c",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=9f96e545b04e20c41efafe5f74126c7c"
                       ],
     "hasUpdate":  false
 }
