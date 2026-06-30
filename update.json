@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  49,
     "versionName":  "1.3.2",
-    "buildId":  "cce5d711862f5e30b19115c036fac32f",
-    "publishedAt":  1782780440979,
-    "changelog":  "v1.3.2 hotfix: show accepted friends in chat and contacts tabs",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cce5d711862f5e30b19115c036fac32f",
+    "buildId":  "6f46435fa624153b39b3b769f3b45889",
+    "publishedAt":  1782781343534,
+    "changelog":  "v1.3.2 hotfix: sync real avatar nickname and leiliao id after friend accept",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=6f46435fa624153b39b3b769f3b45889",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cce5d711862f5e30b19115c036fac32f",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cce5d711862f5e30b19115c036fac32f",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=cce5d711862f5e30b19115c036fac32f"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=6f46435fa624153b39b3b769f3b45889",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=6f46435fa624153b39b3b769f3b45889",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=6f46435fa624153b39b3b769f3b45889"
                       ],
     "hasUpdate":  false
 }
