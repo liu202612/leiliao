@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  49,
     "versionName":  "1.3.2",
-    "buildId":  "06a20c7775a52e4dfec10fd60b361c27",
-    "publishedAt":  1782779555947,
-    "changelog":  "v1.3.2 hotfix: fix friend request send crash (missing inner smali classes)",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=06a20c7775a52e4dfec10fd60b361c27",
+    "buildId":  "cce5d711862f5e30b19115c036fac32f",
+    "publishedAt":  1782780261936,
+    "changelog":  "v1.3.2 hotfix: show accepted friends in chat and contacts tabs",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cce5d711862f5e30b19115c036fac32f",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=06a20c7775a52e4dfec10fd60b361c27",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=06a20c7775a52e4dfec10fd60b361c27",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=06a20c7775a52e4dfec10fd60b361c27"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cce5d711862f5e30b19115c036fac32f",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cce5d711862f5e30b19115c036fac32f",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=cce5d711862f5e30b19115c036fac32f"
                       ],
     "hasUpdate":  false
 }
