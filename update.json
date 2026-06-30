@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  49,
     "versionName":  "1.3.2",
-    "buildId":  "dba536e39b52bd5b492c8b15c4c8a267",
-    "publishedAt":  1782783078061,
-    "changelog":  "v1.3.2 hotfix: location page uses real GPS address",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=dba536e39b52bd5b492c8b15c4c8a267",
+    "buildId":  "27bff75ad9addeed3dc5d3848a5cc780",
+    "publishedAt":  1782783416483,
+    "changelog":  "v1.3.2 hotfix: location page shows real map centered on GPS",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=27bff75ad9addeed3dc5d3848a5cc780",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=dba536e39b52bd5b492c8b15c4c8a267",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=dba536e39b52bd5b492c8b15c4c8a267",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=dba536e39b52bd5b492c8b15c4c8a267"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=27bff75ad9addeed3dc5d3848a5cc780",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=27bff75ad9addeed3dc5d3848a5cc780",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=27bff75ad9addeed3dc5d3848a5cc780"
                       ],
     "hasUpdate":  false
 }
