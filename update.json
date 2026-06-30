@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  49,
     "versionName":  "1.3.2",
-    "buildId":  "e215998dfc532ef313486ced7b94b340",
-    "publishedAt":  1782778740259,
-    "changelog":  "v1.3.2(鐑洿鏂?: 闆疯亰杩愬姩鏄剧ず鐪熷疄澶村儚鏄电О锛涗慨澶岮I鍔╂墜闂€€",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=e215998dfc532ef313486ced7b94b340",
+    "buildId":  "14a26b4fee86e4e93c2eb3e0ca4b74f7",
+    "publishedAt":  1782779042433,
+    "changelog":  "v1.3.2 hotfix: werun push card with real avatar and nickname",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=14a26b4fee86e4e93c2eb3e0ca4b74f7",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=e215998dfc532ef313486ced7b94b340",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=e215998dfc532ef313486ced7b94b340",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=e215998dfc532ef313486ced7b94b340"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=14a26b4fee86e4e93c2eb3e0ca4b74f7",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=14a26b4fee86e4e93c2eb3e0ca4b74f7",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=14a26b4fee86e4e93c2eb3e0ca4b74f7"
                       ],
     "hasUpdate":  false
 }
