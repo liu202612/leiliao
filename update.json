@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  49,
     "versionName":  "1.3.2",
-    "buildId":  "9f96e545b04e20c41efafe5f74126c7c",
-    "publishedAt":  1782782415684,
-    "changelog":  "v1.3.2 hotfix: AI assistant fullscreen purple header without title bar",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9f96e545b04e20c41efafe5f74126c7c",
+    "buildId":  "dba536e39b52bd5b492c8b15c4c8a267",
+    "publishedAt":  1782782967432,
+    "changelog":  "v1.3.2 hotfix: location page uses real GPS address",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=dba536e39b52bd5b492c8b15c4c8a267",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9f96e545b04e20c41efafe5f74126c7c",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9f96e545b04e20c41efafe5f74126c7c",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=9f96e545b04e20c41efafe5f74126c7c"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=dba536e39b52bd5b492c8b15c4c8a267",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=dba536e39b52bd5b492c8b15c4c8a267",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=dba536e39b52bd5b492c8b15c4c8a267"
                       ],
     "hasUpdate":  false
 }
