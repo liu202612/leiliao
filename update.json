@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  49,
     "versionName":  "1.3.2",
-    "buildId":  "6f46435fa624153b39b3b769f3b45889",
-    "publishedAt":  1782781343534,
-    "changelog":  "v1.3.2 hotfix: sync real avatar nickname and leiliao id after friend accept",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=6f46435fa624153b39b3b769f3b45889",
+    "buildId":  "04453d053c796575b8c5a7d42cc77cb0",
+    "publishedAt":  1782781883031,
+    "changelog":  "v1.3.2 hotfix: AI assistant context chat with 20-turn history persistence",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04453d053c796575b8c5a7d42cc77cb0",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=6f46435fa624153b39b3b769f3b45889",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=6f46435fa624153b39b3b769f3b45889",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=6f46435fa624153b39b3b769f3b45889"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04453d053c796575b8c5a7d42cc77cb0",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04453d053c796575b8c5a7d42cc77cb0",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=04453d053c796575b8c5a7d42cc77cb0"
                       ],
     "hasUpdate":  false
 }
