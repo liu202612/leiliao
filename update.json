@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  49,
     "versionName":  "1.3.2",
-    "buildId":  "38b799fa0973981e40ed5cff584dc05e",
-    "publishedAt":  1782787919319,
-    "changelog":  "v1.3.2 hotfix: fix unscannable face-to-face file and red packet QR codes",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=38b799fa0973981e40ed5cff584dc05e",
+    "buildId":  "ed69f839eab71a7961fc47936c7d83eb",
+    "publishedAt":  1782788445269,
+    "changelog":  "v1.3.2 hotfix: remove duplicate QR area above nickname on card QR page",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=ed69f839eab71a7961fc47936c7d83eb",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=38b799fa0973981e40ed5cff584dc05e",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=38b799fa0973981e40ed5cff584dc05e",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=38b799fa0973981e40ed5cff584dc05e"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=ed69f839eab71a7961fc47936c7d83eb",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=ed69f839eab71a7961fc47936c7d83eb",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=ed69f839eab71a7961fc47936c7d83eb"
                       ],
     "hasUpdate":  false
 }
