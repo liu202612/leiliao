@@ -1,15 +1,15 @@
 {
     "ok":  true,
-    "versionCode":  63,
+    "versionCode":  64,
     "versionName":  "1.3.2",
-    "buildId":  "04f17bbbb3a2c33926dadb0fa8f3c16a",
-    "publishedAt":  1782816577156,
+    "buildId":  "885b51fc80545136b6af3f7d125d92ca",
+    "publishedAt":  1782817184490,
     "changelog":  "v1.3.2: face-to-face file receive via LAN pairing after QR scan",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04f17bbbb3a2c33926dadb0fa8f3c16a",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=885b51fc80545136b6af3f7d125d92ca",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04f17bbbb3a2c33926dadb0fa8f3c16a",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04f17bbbb3a2c33926dadb0fa8f3c16a",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=04f17bbbb3a2c33926dadb0fa8f3c16a"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=885b51fc80545136b6af3f7d125d92ca",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=885b51fc80545136b6af3f7d125d92ca",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=885b51fc80545136b6af3f7d125d92ca"
                       ],
     "hasUpdate":  false
 }
