@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 语音波形背景 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 背景 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/waveBackground" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+
+    <!-- 模拟波形条 -->
+    <item android:left="4dp" android:right="4dp" android:top="8dp" android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/waveBarColor" />
+        </shape>
+    </item>
+
+</layer-list>

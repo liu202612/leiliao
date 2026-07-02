@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileProvider 路径配置，用于 APK 更新安装 -->
+<paths>
+    <!-- 外部存储 Downloads 目录 -->
+    <external-files-path
+        name="update_apk"
+        path="Download/" />
+</paths>

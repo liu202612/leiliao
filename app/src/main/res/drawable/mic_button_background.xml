@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 麦克风按钮背景 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下状态 -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/primaryDarkColor" />
+            <size android:width="48dp" android:height="48dp" />
+        </shape>
+    </item>
+
+    <!-- 默认状态 -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/primaryColor" />
+            <size android:width="48dp" android:height="48dp" />
+        </shape>
+    </item>
+
+</selector>

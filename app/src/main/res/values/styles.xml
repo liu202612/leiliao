@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用主题 -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- 主题色 -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+
+        <!-- 状态栏 -->
+        <item name="android:statusBarColor">@color/primaryDarkColor</item>
+
+        <!-- 文字颜色 -->
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+
+        <!-- 窗口背景 -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- 按钮样式 -->
+        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button</item>
+    </style>
+
+    <!-- 聊天详情页主题 -->
+    <style name="ChatDetailTheme" parent="AppTheme">
+        <!-- 聊天页面软键盘模式 -->
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <!-- 语音按钮样式 -->
+    <style name="VoiceButtonStyle">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/mic_button_background</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:contentDescription">@string/voice_button_description</item>
+    </style>
+
+    <!-- 录音指示器文字样式 -->
+    <style name="RecordingTextStyle">
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 消息时间文字样式 -->
+    <style name="MessageTimeTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <!-- 消息气泡圆角 -->
+    <style name="MessageBubbleStyle">
+        <item name="android:background">@drawable/voice_message_bubble</item>
+    </style>
+
+    <!-- 语音时长文字样式 -->
+    <style name="VoiceDurationTextStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

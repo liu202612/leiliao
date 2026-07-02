@@ -1,0 +1,33 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local configuration
+local.properties
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# APK 构建输出（release 脚本会自动复制到根目录）
+app/build/
+
+# 临时文件
+*.tmp
+*.temp

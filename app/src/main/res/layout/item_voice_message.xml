@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 语音消息列表项布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voiceMessageContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+
+    <!-- 时间戳 -->
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:textColor="@color/textSecondary"
+        android:background="@drawable/time_badge_background"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- 消息气泡 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/voice_message_bubble"
+        android:paddingStart="12dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:minWidth="200dp"
+        android:maxWidth="300dp">
+
+        <!-- 播放按钮 -->
+        <ImageView
+            android:id="@+id/playButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_play_arrow"
+            android:scaleType="centerInside"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="播放语音" />
+
+        <!-- 波形背景 + 时长 -->
+        <FrameLayout
+            android:id="@+id/waveBackground"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp">
+
+            <!-- 模拟波形图背景 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/voice_wave_background" />
+
+            <!-- 时长文字覆盖在波形上 -->
+            <TextView
+                android:id="@+id/durationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0:00"
+                android:textSize="13sp"
+                android:textColor="@color/textPrimary"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- 识别文字区域 -->
+    <TextView
+        android:id="@+id/recognizedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="13sp"
+        android:textColor="@color/textSecondary"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:visibility="gone"
+        android:lineSpacingMultiplier="1.2" />
+
+</LinearLayout>

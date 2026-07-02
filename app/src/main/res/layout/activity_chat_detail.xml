@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 聊天详情页面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/chatBackground">
+
+    <!-- 顶部工具栏 -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primaryColor"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <!-- 消息列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- 语音识别结果区域 -->
+    <LinearLayout
+        android:id="@+id/recognizedContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:elevation="2dp">
+
+        <EditText
+            android:id="@+id/recognizedResultText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="识别结果"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:minHeight="40dp"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textSize="14sp"
+            android:textColor="@color/textPrimary" />
+
+        <ImageButton
+            android:id="@+id/cancelRecognizedButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="取消"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/sendRecognizedButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="@drawable/send_button_background"
+            android:contentDescription="发送"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- 录音中指示器 -->
+    <LinearLayout
+        android:id="@+id/recordingIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@color/recordingBackground"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:contentDescription="录音中" />
+
+        <TextView
+            android:id="@+id/recordingTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0:00"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/voiceHintText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="松手发送，上滑取消"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- 底部输入栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:elevation="4dp">
+
+        <!-- 文本输入框 -->
+        <EditText
+            android:id="@+id/inputEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_input_message"
+            android:inputType="text"
+            android:maxLines="3"
+            android:minHeight="40dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textSize="15sp"
+            android:textColor="@color/textPrimary" />
+
+        <!-- 语音按钮（长按录音） -->
+        <ImageButton
+            android:id="@+id/voiceButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/mic_button_background"
+            android:scaleType="centerInside"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/voice_button_description"
+            android:tooltipText="@string/voice_button_tooltip" />
+
+        <!-- 发送按钮 -->
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="4dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:scaleType="centerInside"
+            android:background="@drawable/send_button_background"
+            android:contentDescription="@string/send_button_description"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

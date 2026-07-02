@@ -1,0 +1,17 @@
+{
+    "ok": true,
+    "versionCode": 67,
+    "versionName": "1.4.0",
+    "buildId": "a3f7e2b1c9d0a4f5e6b7c8d9a0e1f2a3",
+    "publishedAt": 1783020800000,
+    "changelog": "v1.4.0:\n- 新增语音消息识别功能（长按录音自动转文字）\n- 优化应用更新推送机制\n- 支持强制更新与普通更新\n- 新增应用内下载进度展示\n- 修复若干已知问题",
+    "downloadUrl": "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a3f7e2b1c9d0a4f5e6b7c8d9a0e1f2a3",
+    "mirrorApkUrls": [
+        "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a3f7e2b1c9d0a4f5e6b7c8d9a0e1f2a3",
+        "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a3f7e2b1c9d0a4f5e6b7c8d9a0e1f2a3",
+        "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a3f7e2b1c9d0a4f5e6b7c8d9a0e1f2a3"
+    ],
+    "hasUpdate": false,
+    "forceUpdate": false,
+    "minSupportedVersionCode": 66
+}
