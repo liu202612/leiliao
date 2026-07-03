@@ -23,6 +23,7 @@ import org.json.JSONObject
 import java.io.File
 import java.math.BigInteger
 import java.net.HttpURLConnection
+import java.io.IOException
 import java.net.URL
 import java.security.MessageDigest
 
@@ -748,7 +749,7 @@ object AppUpdateHelper {
             val metaBuildId = pInfo.applicationInfo?.metaData?.getString("buildId")
             if (!metaBuildId.isNullOrEmpty()) return metaBuildId
             // 回退到从 versionName 后缀提取
-            pInfo.versionName?.split("-").lastOrNull() ?: ""
+            pInfo.versionName?.split("-")?.lastOrNull() ?: ""
         } catch (e: Exception) {
             ""
         }

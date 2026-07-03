@@ -27,9 +27,15 @@ object VersionChangelogCatalog {
     private val RELEASES = arrayOf(
         Release(
             version = "1.4.0",
-            summary = "新增云端通讯接口",
-            date = "2025-06-01",
-            details = "- 新增云端聊天/好友/在线状态 API\n- 优化局域网发现机制\n- 修复若干已知问题"
+            summary = "新增语音识别与更新推送优化",
+            date = "2025-07-03",
+            details = "- 新增语音消息识别功能（长按录音自动转文字）\n- 优化应用内更新弹窗（精美卡片式设计）\n- 优化下载进度通知（实时速度、剩余时间、文件大小）\n- 新增下载失败重试通知\n- 修复更新检测 buildId 判断逻辑\n- 修复 withCacheBust URL 拼接 bug"
+        ),
+        Release(
+            version = "1.3.2",
+            summary = "修复已知问题",
+            date = "2025-06-15",
+            details = "- 修复若干已知问题\n- 优化稳定性"
         ),
         Release(
             version = "1.3.0",

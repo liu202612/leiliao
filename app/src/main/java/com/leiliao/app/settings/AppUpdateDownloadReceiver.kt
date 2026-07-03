@@ -21,7 +21,7 @@ class AppUpdateDownloadReceiver : BroadcastReceiver() {
         Log.d(TAG, "收到下载完成广播: ${intent.action}")
 
         when (intent.action) {
-            Intent.ACTION_DOWNLOAD_COMPLETE -> {
+            "android.intent.action.DOWNLOAD_COMPLETE" -> {
                 val downloadId = intent.getLongExtra(
                     android.app.DownloadManager.EXTRA_DOWNLOAD_ID, -1
                 )

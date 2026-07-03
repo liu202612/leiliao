@@ -21,7 +21,7 @@ class AppUpdateInstallReceiver : BroadcastReceiver() {
         Log.d(TAG, "收到安装广播: ${intent.action}")
 
         when (intent.action) {
-            Intent.ACTION_INSTALL_COMPLETE, Intent.ACTION_PACKAGE_REPLACED -> {
+            "com.leiliao.app.action.INSTALL_COMPLETE", Intent.ACTION_PACKAGE_REPLACED -> {
                 Log.i(TAG, "应用安装/更新完成")
                 // 安装完成后清理缓存文件
                 val dir = java.io.File(context.filesDir, AppUpdateDownloadHelper.UPDATES_DIR)

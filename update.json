@@ -2,14 +2,13 @@
     "ok": true,
     "versionCode": 67,
     "versionName": "1.4.0",
-    "buildId": "26e2f7e3fad048d1d643f3f9891ec90b",
-    "publishedAt": 1783005523568,
-    "changelog": "v1.4.0:\n- 新增语音消息识别功能（长按录音自动转文字）\n- 优化应用更新推送机制\n- 修复更新检测 buildId 判断逻辑\n- 修复 withCacheBust URL 拼接 bug",
-    "downloadUrl": "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=26e2f7e3fad048d1d643f3f9891ec90b",
+    "buildId": "1bff0a29a17b5ef19eeec994fb62b5ab",
+    "publishedAt": 1783120671628,
+    "changelog": "v1.4.0:\n- 新增语音消息识别功能（长按录音自动转文字）\n- 优化应用内更新弹窗（精美卡片式设计）\n- 优化下载进度通知（实时速度、剩余时间、文件大小）\n- 新增下载失败重试通知\n- 修复更新检测 buildId 判断逻辑\n- 修复 withCacheBust URL 拼接 bug",
+    "downloadUrl": "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=1bff0a29a17b5ef19eeec994fb62b5ab",
     "mirrorApkUrls": [
-        "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=26e2f7e3fad048d1d643f3f9891ec90b",
-        "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=26e2f7e3fad048d1d643f3f9891ec90b",
-        "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=26e2f7e3fad048d1d643f3f9891ec90b"
+        "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=1bff0a29a17b5ef19eeec994fb62b5ab",
+        "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=1bff0a29a17b5ef19eeec994fb62b5ab"
     ],
     "hasUpdate": false,
     "forceUpdate": false,

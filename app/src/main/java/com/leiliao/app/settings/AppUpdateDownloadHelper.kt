@@ -301,7 +301,7 @@ object AppUpdateDownloadHelper {
         val nm = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         ensureChannel(nm)
 
-        val file = File(context.filesDir, UPDATES_DIR, FILE_NAME)
+        val file = File(File(context.filesDir, UPDATES_DIR), FILE_NAME)
         val fileSize = if (file.exists()) formatFileSize(file.length()) else "未知"
 
         // 计算下载耗时
