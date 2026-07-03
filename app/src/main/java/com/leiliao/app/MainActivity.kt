@@ -14,6 +14,7 @@ import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.card.MaterialCardView
 import com.leiliao.app.chat.ChatDetailActivity
 import com.leiliao.app.settings.AppUpdateHelper
+import com.leiliao.app.settings.KeyboardIntroDialog
 
 /**
  * 主页面
@@ -62,6 +63,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.action_keyboard_intro -> {
+                KeyboardIntroDialog.show(this)
+                true
+            }
             R.id.action_check_update -> {
                 checkForUpdate()
                 true

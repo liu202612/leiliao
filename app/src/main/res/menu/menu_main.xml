@@ -3,6 +3,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- 雷聊输入法 -->
+    <item
+        android:id="@+id/action_keyboard_intro"
+        android:title="雷聊输入法"
+        android:icon="@android:drawable/ic_menu_agenda"
+        app:showAsAction="never" />
+
     <!-- 检查更新 -->
     <item
         android:id="@+id/action_check_update"
