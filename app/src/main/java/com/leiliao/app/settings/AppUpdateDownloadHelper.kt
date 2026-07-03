@@ -108,6 +108,9 @@ object AppUpdateDownloadHelper {
         }
 
         isDownloading = true
+        downloadStartTime = System.currentTimeMillis()
+        lastNotifyTime = 0L
+        lastProgressBytes = 0L
         downloadThread = Thread {
             var success = false
             var lastError = ""
@@ -203,29 +206,77 @@ object AppUpdateDownloadHelper {
     // 通知管理
     // ─────────────────────────────────────────────────────────────
 
+    /** 上次通知更新时间（用于限频，避免通知栏闪烁） */
+    private var lastNotifyTime = 0L
+    private const val NOTIFY_INTERVAL = 500L  // 最少 500ms 更新一次通知
+
+    /** 下载开始时间（用于计算速度和预估时间） */
+    private var downloadStartTime = 0L
+
+    /** 上次进度更新时的已下载字节数（用于计算瞬时速度） */
+    private var lastProgressBytes = 0L
+    private var lastProgressTime = 0L
+
     /**
-     * 显示进度通知
+     * 显示进度通知（带下载速度和预估剩余时间）
      * @param context 上下文
      * @param progress 已下载字节数
      * @param total 总字节数
      */
     @JvmStatic
     fun showProgressNotification(context: Context, progress: Int, total: Int) {
+        // 限频：避免通知刷新太快
+        val now = System.currentTimeMillis()
+        if (progress > 0 && now - lastNotifyTime < NOTIFY_INTERVAL) return
+        lastNotifyTime = now
+
         val nm = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         ensureChannel(nm)
 
         val percent = if (total > 0) (progress * 100 / total) else 0
+
+        // 计算下载速度和预估剩余时间
+        val speedText = calculateSpeed(progress.toLong(), total.toLong())
+        val remainingText = calculateRemaining(progress.toLong(), total.toLong())
+
+        // 构建通知内容
+        val contentText = if (total > 0) {
+            "$percent%  $speedText"
+        } else {
+            "正在连接..."
+        }
+        val subText = if (total > 0 && remainingText.isNotEmpty()) {
+            "已下载 ${formatFileSize(progress.toLong())} / ${formatFileSize(total.toLong())}  $remainingText"
+        } else {
+            ""
+        }
+
         val builder = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             Notification.Builder(context, CHANNEL_ID)
         } else {
             @Suppress("DEPRECATION")
             Notification.Builder(context)
+                .setPriority(Notification.PRIORITY_LOW)
         }
         builder.setSmallIcon(android.R.drawable.stat_sys_download)
-        builder.setContentTitle("雷聊更新")
-        builder.setContentText("正在下载中 ${percent}%")
+        builder.setContentTitle("雷聊 v${AppUpdateHelper.getLocalVersionName(context)} 更新下载")
+        builder.setContentText(contentText)
+        if (subText.isNotEmpty()) {
+            builder.setSubText(subText)
+        }
         builder.setProgress(100, percent, total <= 0)
         builder.setOngoing(true)
+        builder.setOnlyAlertOnce(true)  // 只在首次通知时响铃/震动
+
+        // 点击通知打开 APP
+        val intent = context.packageManager.getLaunchIntentForPackage(context.packageName)
+        if (intent != null) {
+            val pi = PendingIntent.getActivity(
+                context, 0, intent,
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+            builder.setContentIntent(pi)
+        }
 
         nm.notify(NOTIFICATION_ID, builder.build())
     }
@@ -242,7 +293,7 @@ object AppUpdateDownloadHelper {
     }
 
     /**
-     * 显示下载完成通知
+     * 显示下载完成通知（点击安装）
      * @param context 上下文
      */
     @JvmStatic
@@ -250,12 +301,26 @@ object AppUpdateDownloadHelper {
         val nm = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         ensureChannel(nm)
 
-        // 点击通知后打开安装页面
-        val intent = Intent().apply {
-            setPackage(context.packageName)
+        val file = File(context.filesDir, UPDATES_DIR, FILE_NAME)
+        val fileSize = if (file.exists()) formatFileSize(file.length()) else "未知"
+
+        // 计算下载耗时
+        val elapsed = if (downloadStartTime > 0) {
+            val seconds = (System.currentTimeMillis() - downloadStartTime) / 1000
+            if (seconds < 60) "${seconds}秒" else "${seconds / 60}分${seconds % 60}秒"
+        } else ""
+
+        val contentText = buildString {
+            append("下载完成")
+            if (elapsed.isNotEmpty()) append("（耗时 $elapsed）")
+        }
+
+        // 点击通知直接触发安装
+        val intent = Intent(context, AppUpdateInstallReceiver::class.java).apply {
+            action = "com.leiliao.app.action.INSTALL_DOWNLOADED_APK"
             flags = Intent.FLAG_ACTIVITY_NEW_TASK
         }
-        val pi = PendingIntent.getActivity(
+        val pi = PendingIntent.getBroadcast(
             context, 0, intent,
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
@@ -265,13 +330,52 @@ object AppUpdateDownloadHelper {
         } else {
             @Suppress("DEPRECATION")
             Notification.Builder(context)
+                .setPriority(Notification.PRIORITY_DEFAULT)
         }
         builder.setSmallIcon(android.R.drawable.stat_sys_download_done)
-        builder.setContentTitle("雷聊更新")
-        builder.setContentText("下载完成，点击安装")
+        builder.setContentTitle("雷聊更新已就绪")
+        builder.setContentText(contentText)
+        builder.setSubText("$fileSize · 点击安装")
         builder.setAutoCancel(true)
         builder.setContentIntent(pi)
         builder.setProgress(0, 0, false)
+        builder.setDefaults(Notification.DEFAULT_ALL)  // 完成时响铃/震动提醒
+
+        nm.notify(NOTIFICATION_ID, builder.build())
+    }
+
+    /**
+     * 显示下载失败通知（带重试按钮）
+     * @param context 上下文
+     * @param message 错误消息
+     */
+    @JvmStatic
+    fun showFailedNotification(context: Context, message: String) {
+        val nm = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        ensureChannel(nm)
+
+        // 点击通知打开 APP（手动重试）
+        val intent = context.packageManager.getLaunchIntentForPackage(context.packageName)
+        val pi = if (intent != null) {
+            PendingIntent.getActivity(
+                context, 0, intent,
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+        } else null
+
+        val builder = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Notification.Builder(context, CHANNEL_ID)
+        } else {
+            @Suppress("DEPRECATION")
+            Notification.Builder(context)
+                .setPriority(Notification.PRIORITY_LOW)
+        }
+        builder.setSmallIcon(android.R.drawable.stat_notify_error)
+        builder.setContentTitle("雷聊更新下载失败")
+        builder.setContentText(message)
+        builder.setAutoCancel(true)
+        builder.setProgress(0, 0, false)
+        if (pi != null) builder.setContentIntent(pi)
 
         nm.notify(NOTIFICATION_ID, builder.build())
     }
@@ -298,8 +402,65 @@ object AppUpdateDownloadHelper {
             ).apply {
                 description = "应用下载与更新进度通知"
                 setShowBadge(false)
+                enableVibration(false)  // 下载过程中不震动
+                setSound(null, null)   // 下载过程中不响铃
             }
             nm.createNotificationChannel(channel)
+        }
+    }
+
+    /**
+     * 计算下载速度
+     * @return 速度文本，如 "2.3 MB/s"
+     */
+    private fun calculateSpeed(downloaded: Long, total: Long): String {
+        if (downloadStartTime <= 0 || downloaded <= 0) return ""
+        val now = System.currentTimeMillis()
+        val elapsed = (now - downloadStartTime) / 1000.0
+        if (elapsed < 0.5) return ""
+
+        val speed = downloaded / elapsed  // bytes/second
+        return when {
+            speed < 1024 -> String.format("%.0f B/s", speed)
+            speed < 1024 * 1024 -> String.format("%.1f KB/s", speed / 1024)
+            else -> String.format("%.1f MB/s", speed / 1024 / 1024)
+        }
+    }
+
+    /**
+     * 计算预估剩余时间
+     * @return 预估文本，如 "剩余约 2 分钟" 或空字符串
+     */
+    private fun calculateRemaining(downloaded: Long, total: Long): String {
+        if (downloadStartTime <= 0 || total <= 0 || downloaded <= 0) return ""
+        val remaining = total - downloaded
+        if (remaining <= 0) return ""
+
+        val now = System.currentTimeMillis()
+        val elapsed = (now - downloadStartTime) / 1000.0
+        if (elapsed < 1.0) return ""
+
+        val speed = downloaded / elapsed
+        if (speed <= 0) return ""
+
+        val remainSeconds = (remaining / speed).toLong()
+        return when {
+            remainSeconds < 60 -> "剩余约 ${remainSeconds}秒"
+            remainSeconds < 3600 -> "剩余约 ${remainSeconds / 60}分${remainSeconds % 60}秒"
+            else -> "剩余约 ${remainSeconds / 3600}小时${(remainSeconds % 3600) / 60}分"
+        }
+    }
+
+    /**
+     * 格式化文件大小
+     * @param bytes 字节数
+     * @return 格式化字符串
+     */
+    private fun formatFileSize(bytes: Long): String {
+        return when {
+            bytes < 1024 -> "$bytes B"
+            bytes < 1024 * 1024 -> String.format("%.1f KB", bytes / 1024.0)
+            else -> String.format("%.1f MB", bytes / 1024.0 / 1024.0)
         }
     }
 
@@ -356,8 +517,9 @@ object AppUpdateDownloadHelper {
     fun onDownloadFailed(context: Context, message: String) {
         Log.e(TAG, message)
         cancelNotification(context)
-        // 弹出 Toast 提示
-        toast(context, "下载失败，请稍后重试或用电脑同步最新包")
+        // 弹出 Toast 提示 + 显示失败通知
+        toast(context, "下载失败，请稍后重试")
+        showFailedNotification(context, message)
     }
 
     /**

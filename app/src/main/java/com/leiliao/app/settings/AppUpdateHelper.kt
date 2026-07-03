@@ -5,11 +5,19 @@ import android.app.AlertDialog
 import android.content.Context
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
+import android.graphics.Color
+import android.graphics.Typeface
+import android.graphics.drawable.GradientDrawable
 import android.os.Build
 import android.text.method.ScrollingMovementMethod
 import android.util.Log
+import android.util.TypedValue
 import android.view.Gravity
+import android.view.View
+import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.ProgressBar
+import android.widget.ScrollView
 import android.widget.TextView
 import org.json.JSONObject
 import java.io.File
@@ -272,6 +280,7 @@ object AppUpdateHelper {
 
     /**
      * 显示"发现新版本"对话框
+     * 精美 UI：圆角卡片、版本图标、渐变按钮、更新日志滚动区
      * @param activity Activity
      * @param info 更新信息
      */
@@ -280,37 +289,182 @@ object AppUpdateHelper {
         // 保存更新信息到角标存储
         AppUpdateBadgeStore.applyUpdateInfo(activity, info)
 
-        val contentView = LinearLayout(activity).apply {
+        val dp = activity.resources.displayMetrics.density
+        val primaryColor = Color.parseColor("#1A73E8")
+        val primaryLight = Color.parseColor("#E8F0FE")
+        val textPrimary = Color.parseColor("#1F1F1F")
+        val textSecondary = Color.parseColor("#5F6368")
+        val dividerColor = Color.parseColor("#E8EAED")
+
+        val dialogView = LinearLayout(activity).apply {
             orientation = LinearLayout.VERTICAL
-            setPadding(48, 24, 48, 16)
-
-            // 版本信息
-            addView(TextView(activity).apply {
-                text = "新版本: ${info.displayVersion}"
-                textSize = 16f
-            })
-
-            // 更新日志
-            if (info.changelog.isNotBlank()) {
-                addView(TextView(activity).apply {
-                    text = info.changelog
-                    textSize = 14f
-                    setPadding(0, 16, 0, 8)
-                    movementMethod = ScrollingMovementMethod()
-                    maxLines = 10
-                })
-            }
+            setPadding((24 * dp).toInt(), (20 * dp).toInt(), (24 * dp).toInt(), (8 * dp).toInt())
+            gravity = Gravity.CENTER_HORIZONTAL
         }
 
-        AlertDialog.Builder(activity)
-            .setTitle("发现新版本 ${info.displayVersion}")
-            .setView(contentView)
+        // ── 顶部图标区域 ──
+        val iconSize = (56 * dp).toInt()
+        val iconBg = GradientDrawable().apply {
+            shape = GradientDrawable.OVAL
+            setColor(primaryLight)
+        }
+        val iconContainer = LinearLayout(activity).apply {
+            layoutParams = LinearLayout.LayoutParams(iconSize, iconSize).apply {
+                bottomMargin = (16 * dp).toInt()
+            }
+            gravity = Gravity.CENTER
+            background = iconBg
+            val rocket = TextView(activity).apply {
+                text = "🚀"
+                textSize = 28f
+                setPadding(0, 0, 0, 0)
+            }
+            addView(rocket)
+        }
+        dialogView.addView(iconContainer)
+
+        // ── "发现新版本" 标题 ──
+        dialogView.addView(TextView(activity).apply {
+            text = "发现新版本"
+            textSize = 20f
+            setTypeface(null, Typeface.BOLD)
+            setTextColor(textPrimary)
+            gravity = Gravity.CENTER
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { bottomMargin = (4 * dp).toInt() }
+        })
+
+        // ── 版本号 ──
+        dialogView.addView(TextView(activity).apply {
+            text = info.displayVersion
+            textSize = 15f
+            setTextColor(primaryColor)
+            setTypeface(null, Typeface.BOLD)
+            gravity = Gravity.CENTER
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { bottomMargin = (16 * dp).toInt() }
+        })
+
+        // ── 分割线 ──
+        val divider = View(activity).apply {
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, (1 * dp).toInt()
+            ).apply { bottomMargin = (16 * dp).toInt() }
+            background = GradientDrawable().apply { setColor(dividerColor) }
+        }
+        dialogView.addView(divider)
+
+        // ── 更新日志 ──
+        if (info.changelog.isNotBlank()) {
+            dialogView.addView(TextView(activity).apply {
+                text = "更新日志"
+                textSize = 13f
+                setTextColor(textSecondary)
+                setTypeface(null, Typeface.BOLD)
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply { bottomMargin = (8 * dp).toInt() }
+            })
+
+            val changelogScrollView = ScrollView(activity).apply {
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    (120 * dp).toInt()
+                ).apply { bottomMargin = (8 * dp).toInt() }
+                isVerticalScrollBarEnabled = false
+                background = GradientDrawable().apply {
+                    setColor(Color.parseColor("#F8F9FA"))
+                    setCornerRadius(12 * dp)
+                }
+                setPadding((12 * dp).toInt(), (12 * dp).toInt(), (12 * dp).toInt(), (12 * dp).toInt())
+
+                addView(TextView(activity).apply {
+                    text = info.changelog
+                    textSize = 13f
+                    setTextColor(textPrimary)
+                    setLineSpacing((4 * dp).toFloat(), 1f)
+                    movementMethod = ScrollingMovementMethod()
+                })
+            }
+            dialogView.addView(changelogScrollView)
+        }
+
+        // ── 对话框 ──
+        val dialog = AlertDialog.Builder(activity)
+            .setView(dialogView)
             .setCancelable(true)
-            .setPositiveButton("立即更新") { _, _ ->
+            .create()
+
+        dialog.window?.setBackgroundDrawable(
+            GradientDrawable().apply {
+                setColor(Color.WHITE)
+                setCornerRadius(20 * dp)
+            }
+        )
+
+        dialog.show()
+
+        // ── 底部按钮（自定义，替代默认按钮） ──
+        val btnContainer = LinearLayout(activity).apply {
+            orientation = LinearLayout.HORIZONTAL
+            setPadding((24 * dp).toInt(), (8 * dp).toInt(), (24 * dp).toInt(), (20 * dp).toInt())
+            gravity = Gravity.CENTER
+        }
+
+        // "稍后" 按钮
+        val laterBtn = TextView(activity).apply {
+            text = "稍后"
+            textSize = 15f
+            setTypeface(null, Typeface.BOLD)
+            setTextColor(textSecondary)
+            gravity = Gravity.CENTER
+            setPadding((20 * dp).toInt(), (12 * dp).toInt(), (20 * dp).toInt(), (12 * dp).toInt())
+            layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+            background = GradientDrawable().apply {
+                setColor(Color.parseColor("#F1F3F4"))
+                setCornerRadius(12 * dp)
+            }
+            setOnClickListener { dialog.dismiss() }
+        }
+        btnContainer.addView(laterBtn)
+
+        // 间距
+        val spacer = View(activity).apply {
+            layoutParams = LinearLayout.LayoutParams((12 * dp).toInt(), LinearLayout.LayoutParams.MATCH_PARENT)
+        }
+        btnContainer.addView(spacer)
+
+        // "立即更新" 按钮
+        val updateBtn = TextView(activity).apply {
+            text = "立即更新"
+            textSize = 15f
+            setTypeface(null, Typeface.BOLD)
+            setTextColor(Color.WHITE)
+            gravity = Gravity.CENTER
+            setPadding((20 * dp).toInt(), (12 * dp).toInt(), (20 * dp).toInt(), (12 * dp).toInt())
+            layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+            background = GradientDrawable().apply {
+                setColor(primaryColor)
+                setCornerRadius(12 * dp)
+            }
+            setOnClickListener {
+                dialog.dismiss()
                 startDownload(activity, info)
             }
-            .setNegativeButton("稍后") { _, _ -> }
-            .show()
+        }
+        btnContainer.addView(updateBtn)
+
+        // 将按钮区域添加到对话框底部
+        dialog.window?.setContentView(LinearLayout(activity).apply {
+            orientation = LinearLayout.VERTICAL
+            addView(dialogView.parent as View)
+            addView(btnContainer)
+        })
     }
 
     /**
@@ -320,17 +474,101 @@ object AppUpdateHelper {
      */
     @JvmStatic
     fun showLatestDialog(activity: Activity, info: UpdateInfo) {
-        val msg = if (info.versionCode > 0) {
-            "当前已是最新版本 ${info.displayVersion}"
-        } else {
-            "当前已是最新版本"
+        val dp = activity.resources.displayMetrics.density
+
+        val contentView = LinearLayout(activity).apply {
+            orientation = LinearLayout.VERTICAL
+            gravity = Gravity.CENTER_HORIZONTAL
+            setPadding((24 * dp).toInt(), (24 * dp).toInt(), (24 * dp).toInt(), (8 * dp).toInt())
+
+            // 图标
+            addView(LinearLayout(activity).apply {
+                gravity = Gravity.CENTER
+                background = GradientDrawable().apply {
+                    shape = GradientDrawable.OVAL
+                    setColor(Color.parseColor("#E6F4EA"))
+                    setPadding(0, 0, 0, 0)
+                }
+                layoutParams = LinearLayout.LayoutParams((56 * dp).toInt(), (56 * dp).toInt()).apply {
+                    bottomMargin = (16 * dp).toInt()
+                }
+                addView(TextView(activity).apply {
+                    text = "✅"
+                    textSize = 28f
+                    gravity = Gravity.CENTER
+                })
+            })
+
+            // 标题
+            addView(TextView(activity).apply {
+                text = "已是最新版本"
+                textSize = 20f
+                setTypeface(null, Typeface.BOLD)
+                setTextColor(Color.parseColor("#1F1F1F"))
+                gravity = Gravity.CENTER
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply { bottomMargin = (8 * dp).toInt() }
+            })
+
+            // 描述
+            val msg = if (info.versionCode > 0) {
+                "当前版本 ${info.displayVersion} 已是最新版本"
+            } else {
+                "当前已是最新版本"
+            }
+            addView(TextView(activity).apply {
+                text = msg
+                textSize = 14f
+                setTextColor(Color.parseColor("#5F6368"))
+                gravity = Gravity.CENTER
+            })
         }
-        AlertDialog.Builder(activity)
-            .setTitle("已是最新版本")
-            .setMessage(msg)
+
+        val dialog = AlertDialog.Builder(activity)
+            .setView(contentView)
             .setCancelable(true)
-            .setPositiveButton("确定", null)
-            .show()
+            .create()
+
+        dialog.window?.setBackgroundDrawable(
+            GradientDrawable().apply {
+                setColor(Color.WHITE)
+                setCornerRadius(20 * dp)
+            }
+        )
+
+        dialog.show()
+
+        // "确定" 按钮
+        val btnContainer = LinearLayout(activity).apply {
+            orientation = LinearLayout.HORIZONTAL
+            setPadding((24 * dp).toInt(), (8 * dp).toInt(), (24 * dp).toInt(), (20 * dp).toInt())
+            gravity = Gravity.CENTER
+        }
+        val okBtn = TextView(activity).apply {
+            text = "好的"
+            textSize = 15f
+            setTypeface(null, Typeface.BOLD)
+            setTextColor(Color.WHITE)
+            gravity = Gravity.CENTER
+            setPadding((40 * dp).toInt(), (12 * dp).toInt(), (40 * dp).toInt(), (12 * dp).toInt())
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT
+            )
+            background = GradientDrawable().apply {
+                setColor(Color.parseColor("#1A73E8"))
+                setCornerRadius(12 * dp)
+            }
+            setOnClickListener { dialog.dismiss() }
+        }
+        btnContainer.addView(okBtn)
+
+        dialog.window?.setContentView(LinearLayout(activity).apply {
+            orientation = LinearLayout.VERTICAL
+            addView(contentView.parent as View)
+            addView(btnContainer)
+        })
     }
 
     /**
