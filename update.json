@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "e670e70e2a5b18f4b8ada045d02dc36a",
-    "publishedAt":  1783172283152,
-    "changelog":  "v1.4.0 hotfix b102: rename Moments to Friends Circle (濂藉弸鍦堝瓙) across the app",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=e670e70e2a5b18f4b8ada045d02dc36a",
+    "buildId":  "35c3433243522e768e679ecc1ec3a4b8",
+    "publishedAt":  1783172613114,
+    "changelog":  "v1.4.0 hotfix b103: location page title bar uses white background",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=35c3433243522e768e679ecc1ec3a4b8",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=e670e70e2a5b18f4b8ada045d02dc36a",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=e670e70e2a5b18f4b8ada045d02dc36a",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=e670e70e2a5b18f4b8ada045d02dc36a"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=35c3433243522e768e679ecc1ec3a4b8",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=35c3433243522e768e679ecc1ec3a4b8",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=35c3433243522e768e679ecc1ec3a4b8"
                       ],
     "hasUpdate":  true
 }
