@@ -2,9 +2,9 @@
     "ok": true,
     "versionCode": 71,
     "versionName": "1.4.4",
-    "buildId": "e2c39a53c5b26a44ea8cc69541e705d9",
-    "publishedAt": 1783161441000,
-    "changelog": "v1.4.4:\n- 邮箱更改为 epc***@leiliao.com\n- 雷聊输入法页面增加更新日志展示",
+    "buildId": "ce9820ce0df81ff846c8a9d77d2eef67",
+    "publishedAt": 1783161479000,
+    "changelog": "v1.4.4:\n- 邮箱更改为epc@leiliao.top\n- 输入法页面卡片式布局优化\n- 更新日志实时展示",
     "downloadUrl": "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk",
     "mirrorApkUrls": [
         "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk"
