@@ -1,16 +1,15 @@
 {
     "ok": true,
-    "versionCode": 67,
-    "versionName": "1.4.0",
-    "buildId": "47693b0dce1d262d7f6ef0b16ca9e821",
-    "publishedAt": 1783134578000,
-    "changelog": "v1.4.0:\n- 新增语音消息识别功能（长按录音自动转文字）\n- 优化应用内更新弹窗（精美卡片式设计）\n- 优化下载进度通知（实时速度、剩余时间、文件大小）\n- 新增下载失败重试通知\n- 修复更新检测 buildId 判断逻辑\n- 修复 withCacheBust URL 拼接 bug",
+    "versionCode": 68,
+    "versionName": "1.4.1",
+    "buildId": "1251824b3a9b11adde50618d5cc8e9c2",
+    "publishedAt": 1783139000000,
+    "changelog": "v1.4.1:\n- 修复系统兼容性问题\n- 修复应用内更新下载失败\n- 新增雷聊输入法插件入口\n- 优化签名适配最新系统",
     "downloadUrl": "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk",
     "mirrorApkUrls": [
-        "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk",
-        "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk"
+        "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk"
     ],
-    "hasUpdate": false,
+    "hasUpdate": true,
     "forceUpdate": false,
     "minSupportedVersionCode": 66
 }
