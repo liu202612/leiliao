@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "222d6e092be81b81a57b839f5ed8df95",
-    "publishedAt":  1783168013705,
-    "changelog":  "v1.4.0 hotfix b94: configure epc@leiliao.top SMTP for email verify",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=222d6e092be81b81a57b839f5ed8df95",
+    "buildId":  "cba0e02fcf9861cfcb2484cd8d61dc26",
+    "publishedAt":  1783168222285,
+    "changelog":  "v1.4.0 hotfix b95: wire settings plugin entry to PluginManageActivity",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cba0e02fcf9861cfcb2484cd8d61dc26",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=222d6e092be81b81a57b839f5ed8df95",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=222d6e092be81b81a57b839f5ed8df95",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=222d6e092be81b81a57b839f5ed8df95"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cba0e02fcf9861cfcb2484cd8d61dc26",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cba0e02fcf9861cfcb2484cd8d61dc26",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=cba0e02fcf9861cfcb2484cd8d61dc26"
                       ],
     "hasUpdate":  false
 }
