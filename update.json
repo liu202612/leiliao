@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "5802b4094753d62944484bfdd66b158d",
-    "publishedAt":  1783171512314,
-    "changelog":  "v1.4.0 hotfix b101: Leiliao Team chat footer - version update, account help, support center",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=5802b4094753d62944484bfdd66b158d",
+    "buildId":  "e670e70e2a5b18f4b8ada045d02dc36a",
+    "publishedAt":  1783172283152,
+    "changelog":  "v1.4.0 hotfix b102: rename Moments to Friends Circle (濂藉弸鍦堝瓙) across the app",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=e670e70e2a5b18f4b8ada045d02dc36a",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=5802b4094753d62944484bfdd66b158d",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=5802b4094753d62944484bfdd66b158d",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=5802b4094753d62944484bfdd66b158d"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=e670e70e2a5b18f4b8ada045d02dc36a",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=e670e70e2a5b18f4b8ada045d02dc36a",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=e670e70e2a5b18f4b8ada045d02dc36a"
                       ],
     "hasUpdate":  true
 }
