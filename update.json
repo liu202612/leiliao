@@ -2,19 +2,19 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "a26052210087cfd77ef038978493d289",
-    "publishedAt":  1783175028907,
-    "changelog":  "修复已安装最新包后仍反复提示更新; 更新弹窗与推送卡片版本号始终显示本机 APP 版本（如 雷聊 1.4.0）; 优先从 GitHub 拉取最新 update.json，避免 CDN 缓存旧版本",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a26052210087cfd77ef038978493d289",
+    "buildId":  "9987e71e9964f9d79fc9d1fef4ffe55a",
+    "publishedAt":  1783175375035,
+    "changelog":  "设置页移除顶部搜索框; 设置页移除账号、通用、功能等分组标题; 设置项合并为单一连续列表",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=9987e71e9964f9d79fc9d1fef4ffe55a",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a26052210087cfd77ef038978493d289",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a26052210087cfd77ef038978493d289",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a26052210087cfd77ef038978493d289"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=9987e71e9964f9d79fc9d1fef4ffe55a",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9987e71e9964f9d79fc9d1fef4ffe55a",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9987e71e9964f9d79fc9d1fef4ffe55a"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
-                           "修复已安装最新包后仍反复提示更新",
-                           "更新弹窗与推送卡片版本号始终显示本机 APP 版本（如 雷聊 1.4.0）",
-                           "优先从 GitHub 拉取最新 update.json，避免 CDN 缓存旧版本"
+                           "设置页移除顶部搜索框",
+                           "设置页移除账号、通用、功能等分组标题",
+                           "设置项合并为单一连续列表"
                        ]
 }
