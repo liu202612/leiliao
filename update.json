@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "a6d71a68b432fe8eec9ba98686110051",
-    "publishedAt":  1783168435816,
-    "changelog":  "v1.4.0 hotfix b96: test same-version hot update push",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a6d71a68b432fe8eec9ba98686110051",
+    "buildId":  "7ed9acfdd7cafd76211fef7db41f8e88",
+    "publishedAt":  1783168934569,
+    "changelog":  "v1.4.0 hotfix b97: remove update log section from plugin page",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7ed9acfdd7cafd76211fef7db41f8e88",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a6d71a68b432fe8eec9ba98686110051",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a6d71a68b432fe8eec9ba98686110051",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a6d71a68b432fe8eec9ba98686110051"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7ed9acfdd7cafd76211fef7db41f8e88",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7ed9acfdd7cafd76211fef7db41f8e88",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=7ed9acfdd7cafd76211fef7db41f8e88"
                       ],
-    "hasUpdate":  true
+    "hasUpdate":  false
 }
