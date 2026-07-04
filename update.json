@@ -1,13 +1,13 @@
 {
     "ok": true,
-    "versionCode": 69,
-    "versionName": "1.4.2",
-    "buildId": "d4bbefdbd12c7dd2142963b5d628b6b5",
-    "publishedAt": 1783160412000,
-    "changelog": "v1.4.2:\n- 雷聊输入法插件页面优化(卡片式布局)\n- 修复更新推送通知不显示问题\n- 新增通知权限检查\n- 下载完成通知点击可跳转\n- 标题栏和状态栏改为白色",
+    "versionCode": 70,
+    "versionName": "1.4.3",
+    "buildId": "8efc9981239d7466e46af8eb9e6171a1",
+    "publishedAt": 1783160911000,
+    "changelog": "v1.4.3:\n- 雷聊输入法页面增加卡片式布局\n- 新增更新日志展示(实时从服务器读取)\n- 标题栏和状态栏改为白色\n- 修复更新推送通知问题\n- 新增通知权限检查",
     "downloadUrl": "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk",
     "mirrorApkUrls": [
-        "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk"
+        "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk"
     ],
     "hasUpdate": true,
     "forceUpdate": false,
