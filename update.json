@@ -1,15 +1,15 @@
 {
-    "ok": true,
-    "versionCode": 68,
-    "versionName": "1.4.0",
-    "buildId": "cb4248750d6d6a9df87efa216a1aacc2",
-    "publishedAt": 1783165485000,
-    "changelog": "v1.4.0:\n- 修复Android 12+更新安装闪退(PendingIntent FLAG_IMMUTABLE)\n- 雷聊输入法插件(卡片式布局)\n- SMTP邮箱统一epc@leiliao.top\n- 验证码邮件发送\n- 推送通知修复",
-    "downloadUrl": "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk",
-    "mirrorApkUrls": [
-        "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk"
-    ],
-    "hasUpdate": true,
-    "forceUpdate": false,
-    "minSupportedVersionCode": 66
+    "ok":  true,
+    "versionCode":  68,
+    "versionName":  "1.4.0",
+    "buildId":  "4802458829190dcca5de76dfc4582cce",
+    "publishedAt":  1783166675549,
+    "changelog":  "v1.4.0: merge new base(1) with wallet/chat/LAN patches",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=4802458829190dcca5de76dfc4582cce",
+    "mirrorApkUrls":  [
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=4802458829190dcca5de76dfc4582cce",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=4802458829190dcca5de76dfc4582cce",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=4802458829190dcca5de76dfc4582cce"
+                      ],
+    "hasUpdate":  false
 }
