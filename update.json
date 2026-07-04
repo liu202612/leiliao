@@ -1,10 +1,10 @@
 {
     "ok": true,
-    "versionCode": 74,
-    "versionName": "1.4.7",
-    "buildId": "fdeb04fa83376744773645ecad1420d1",
-    "publishedAt": 1783164749000,
-    "changelog": "v1.4.7:\n- 修复绑定邮箱验证码发送失败(EmailSmtpSender账号密码未同步更新)\n- 所有邮件发送统一使用epc@leiliao.top",
+    "versionCode": 68,
+    "versionName": "1.4.0",
+    "buildId": "f4c29994046185095b70c43de035ee01",
+    "publishedAt": 1783165149000,
+    "changelog": "v1.4.0:\n- 雷聊输入法插件(卡片式布局+功能介绍)\n- SMTP邮箱统一为epc@leiliao.top\n- 绑定邮箱/改密码/找回密码验证码邮件发送\n- 修复推送通知不显示问题\n- 新增通知权限检查\n- 邮箱更改为epc@leiliao.top",
     "downloadUrl": "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk",
     "mirrorApkUrls": [
         "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk"
