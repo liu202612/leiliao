@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "cd2a4c972b429d3e434baf8f8f8511f5",
-    "publishedAt":  1783169198640,
-    "changelog":  "v1.4.0 hotfix b98: set customer service email to epc@leiliao.top",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cd2a4c972b429d3e434baf8f8f8511f5",
+    "buildId":  "04f3db34cfa085e46cd06778d3b96190",
+    "publishedAt":  1783169545291,
+    "changelog":  "v1.4.0 hotfix b99: set customer service hotline to 17882235747",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04f3db34cfa085e46cd06778d3b96190",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cd2a4c972b429d3e434baf8f8f8511f5",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cd2a4c972b429d3e434baf8f8f8511f5",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=cd2a4c972b429d3e434baf8f8f8511f5"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04f3db34cfa085e46cd06778d3b96190",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=04f3db34cfa085e46cd06778d3b96190",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=04f3db34cfa085e46cd06778d3b96190"
                       ],
     "hasUpdate":  false
 }
