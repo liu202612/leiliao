@@ -2,19 +2,19 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "0598815b0b4e61bbddf133154ecfda7d",
-    "publishedAt":  1783174391475,
-    "changelog":  "更新弹窗全新设计，版本号与 APP 保持一致; 更新说明展示本次功能变更，不再显示英文开发日志; 雷聊团队推送卡片与更新详情页同步展示正确内容",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=0598815b0b4e61bbddf133154ecfda7d",
+    "buildId":  "a26052210087cfd77ef038978493d289",
+    "publishedAt":  1783175028907,
+    "changelog":  "修复已安装最新包后仍反复提示更新; 更新弹窗与推送卡片版本号始终显示本机 APP 版本（如 雷聊 1.4.0）; 优先从 GitHub 拉取最新 update.json，避免 CDN 缓存旧版本",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a26052210087cfd77ef038978493d289",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=0598815b0b4e61bbddf133154ecfda7d",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=0598815b0b4e61bbddf133154ecfda7d",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=0598815b0b4e61bbddf133154ecfda7d"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a26052210087cfd77ef038978493d289",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a26052210087cfd77ef038978493d289",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a26052210087cfd77ef038978493d289"
                       ],
-    "hasUpdate":  true,
+    "hasUpdate":  false,
     "changelogItems":  [
-                           "更新弹窗全新设计，版本号与 APP 保持一致",
-                           "更新说明展示本次功能变更，不再显示英文开发日志",
-                           "雷聊团队推送卡片与更新详情页同步展示正确内容"
+                           "修复已安装最新包后仍反复提示更新",
+                           "更新弹窗与推送卡片版本号始终显示本机 APP 版本（如 雷聊 1.4.0）",
+                           "优先从 GitHub 拉取最新 update.json，避免 CDN 缓存旧版本"
                        ]
 }
