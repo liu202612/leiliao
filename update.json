@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "493cdcc1c192a2b100ab24d8da14bfef",
-    "publishedAt":  1783166992480,
-    "changelog":  "v1.4.0 hotfix: remove chat background version watermark",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=493cdcc1c192a2b100ab24d8da14bfef",
+    "buildId":  "7053cc269316ef77fa11d8d05d2b7d36",
+    "publishedAt":  1783167902135,
+    "changelog":  "v1.4.0 hotfix b93: fix update system crash",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7053cc269316ef77fa11d8d05d2b7d36",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=493cdcc1c192a2b100ab24d8da14bfef",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=493cdcc1c192a2b100ab24d8da14bfef",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=493cdcc1c192a2b100ab24d8da14bfef"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7053cc269316ef77fa11d8d05d2b7d36",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=7053cc269316ef77fa11d8d05d2b7d36",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=7053cc269316ef77fa11d8d05d2b7d36"
                       ],
     "hasUpdate":  false
 }
