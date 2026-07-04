@@ -2,7 +2,7 @@
     "ok": true,
     "versionCode": 67,
     "versionName": "1.4.0",
-    "buildId": "397bd62e3f4dbf6d2d71d458f7282db2",
+    "buildId": "c9abb314de7f7b7e5df17b719f22534a",
     "publishedAt": 1783134578000,
     "changelog": "v1.4.0:\n- 新增语音消息识别功能（长按录音自动转文字）\n- 优化应用内更新弹窗（精美卡片式设计）\n- 优化下载进度通知（实时速度、剩余时间、文件大小）\n- 新增下载失败重试通知\n- 修复更新检测 buildId 判断逻辑\n- 修复 withCacheBust URL 拼接 bug",
     "downloadUrl": "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk",
