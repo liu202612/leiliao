@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "cba0e02fcf9861cfcb2484cd8d61dc26",
-    "publishedAt":  1783168222285,
-    "changelog":  "v1.4.0 hotfix b95: wire settings plugin entry to PluginManageActivity",
-    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cba0e02fcf9861cfcb2484cd8d61dc26",
+    "buildId":  "a6d71a68b432fe8eec9ba98686110051",
+    "publishedAt":  1783168435816,
+    "changelog":  "v1.4.0 hotfix b96: test same-version hot update push",
+    "downloadUrl":  "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a6d71a68b432fe8eec9ba98686110051",
     "mirrorApkUrls":  [
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cba0e02fcf9861cfcb2484cd8d61dc26",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cba0e02fcf9861cfcb2484cd8d61dc26",
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=cba0e02fcf9861cfcb2484cd8d61dc26"
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a6d71a68b432fe8eec9ba98686110051",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a6d71a68b432fe8eec9ba98686110051",
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a6d71a68b432fe8eec9ba98686110051"
                       ],
-    "hasUpdate":  false
+    "hasUpdate":  true
 }
