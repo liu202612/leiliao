@@ -1,10 +1,10 @@
 {
     "ok": true,
-    "versionCode": 72,
-    "versionName": "1.4.5",
-    "buildId": "2dd92af09e5dedbb6ec8cc7254c4299a",
-    "publishedAt": 1783164165000,
-    "changelog": "v1.4.5:\n- 验证码通过邮箱epc@leiliao.top真实发送(阿里云企业邮箱SMTP)\n- 邮箱更改为epc@leiliao.top\n- 输入法页面卡片式布局优化\n- 更新日志实时展示\n- 推送通知修复",
+    "versionCode": 73,
+    "versionName": "1.4.6",
+    "buildId": "e3b82db8b30e3bcbb8f75cedefcdaeb0",
+    "publishedAt": 1783164323000,
+    "changelog": "v1.4.6:\n- SMTP邮箱改为epc@leiliao.top(阿里云企业邮箱)\n- 绑定邮箱/改密码/找回密码均通过epc@leiliao.top发送验证码\n- 输入法页面卡片式布局优化\n- 更新日志实时展示",
     "downloadUrl": "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk",
     "mirrorApkUrls": [
         "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk"
