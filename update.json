@@ -1,10 +1,10 @@
 {
     "ok": true,
-    "versionCode": 68,
-    "versionName": "1.4.1",
-    "buildId": "1251824b3a9b11adde50618d5cc8e9c2",
-    "publishedAt": 1783139000000,
-    "changelog": "v1.4.1:\n- 修复系统兼容性问题\n- 修复应用内更新下载失败\n- 新增雷聊输入法插件入口\n- 优化签名适配最新系统",
+    "versionCode": 69,
+    "versionName": "1.4.2",
+    "buildId": "d4bbefdbd12c7dd2142963b5d628b6b5",
+    "publishedAt": 1783160412000,
+    "changelog": "v1.4.2:\n- 雷聊输入法插件页面优化(卡片式布局)\n- 修复更新推送通知不显示问题\n- 新增通知权限检查\n- 下载完成通知点击可跳转\n- 标题栏和状态栏改为白色",
     "downloadUrl": "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk",
     "mirrorApkUrls": [
         "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk"
