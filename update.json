@@ -2,19 +2,19 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "9987e71e9964f9d79fc9d1fef4ffe55a",
-    "publishedAt":  1783175375035,
-    "changelog":  "设置页移除顶部搜索框; 设置页移除账号、通用、功能等分组标题; 设置项合并为单一连续列表",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=9987e71e9964f9d79fc9d1fef4ffe55a",
+    "buildId":  "a7cc24dc95912b210afd43a4f286c56d",
+    "publishedAt":  1783177409470,
+    "changelog":  "私聊、群聊、服务号表情选择器默认展示经典表情; 经典表情（笑脸系列）作为第一个分类标签; 与表情商店经典表情包内容保持一致",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a7cc24dc95912b210afd43a4f286c56d",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=9987e71e9964f9d79fc9d1fef4ffe55a",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9987e71e9964f9d79fc9d1fef4ffe55a",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9987e71e9964f9d79fc9d1fef4ffe55a"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a7cc24dc95912b210afd43a4f286c56d",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a7cc24dc95912b210afd43a4f286c56d",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a7cc24dc95912b210afd43a4f286c56d"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
-                           "设置页移除顶部搜索框",
-                           "设置页移除账号、通用、功能等分组标题",
-                           "设置项合并为单一连续列表"
+                           "私聊、群聊、服务号表情选择器默认展示经典表情",
+                           "经典表情（笑脸系列）作为第一个分类标签",
+                           "与表情商店经典表情包内容保持一致"
                        ]
 }
