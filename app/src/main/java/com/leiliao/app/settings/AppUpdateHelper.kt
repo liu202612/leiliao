@@ -297,6 +297,11 @@ object AppUpdateHelper {
         val textSecondary = Color.parseColor("#5F6368")
         val dividerColor = Color.parseColor("#E8EAED")
 
+        // 先创建 dialog（供后面点击事件使用）
+        val dialog = AlertDialog.Builder(activity)
+            .setCancelable(true)
+            .create()
+
         val dialogView = LinearLayout(activity).apply {
             orientation = LinearLayout.VERTICAL
             setPadding((24 * dp).toInt(), (20 * dp).toInt(), (24 * dp).toInt(), (8 * dp).toInt())
@@ -395,19 +400,76 @@ object AppUpdateHelper {
             dialogView.addView(changelogScrollView)
         }
 
-        // ── 对话框 ──
-        val dialog = AlertDialog.Builder(activity)
-            .setView(dialogView)
-            .setCancelable(true)
-            .create()
+        // ── 推荐：雷聊输入法 ──
+        dialogView.addView(View(activity).apply {
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, (1 * dp).toInt()
+            ).apply {
+                topMargin = (8 * dp).toInt()
+                bottomMargin = (12 * dp).toInt()
+            }
+            background = GradientDrawable().apply { setColor(dividerColor) }
+        })
+        val kbCard = LinearLayout(activity).apply {
+            orientation = LinearLayout.HORIZONTAL
+            gravity = Gravity.CENTER_VERTICAL
+            setPadding((14 * dp).toInt(), (10 * dp).toInt(), (14 * dp).toInt(), (10 * dp).toInt())
+            background = GradientDrawable().apply {
+                setColor(Color.parseColor("#F8F9FA"))
+                setCornerRadius(12 * dp)
+            }
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            )
+        }
+        kbCard.addView(TextView(activity).apply {
+            text = "⌨️"
+            textSize = 24f
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { marginEnd = (10 * dp).toInt() }
+        })
+        kbCard.addView(LinearLayout(activity).apply {
+            orientation = LinearLayout.VERTICAL
+            layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+            addView(TextView(activity).apply {
+                text = "雷聊输入法"
+                textSize = 14f
+                setTypeface(null, Typeface.BOLD)
+                setTextColor(textPrimary)
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply { bottomMargin = (2 * dp).toInt() }
+            })
+            addView(TextView(activity).apply {
+                text = "高效、安全、个性化的智能输入体验"
+                textSize = 12f
+                setTextColor(textSecondary)
+            })
+        })
+        kbCard.addView(TextView(activity).apply {
+            text = "›"
+            textSize = 20f
+            setTextColor(Color.parseColor("#9AA0A6"))
+            gravity = Gravity.CENTER
+        })
+        kbCard.setOnClickListener {
+            dialog.dismiss()
+            KeyboardIntroDialog.show(activity)
+        }
+        dialogView.addView(kbCard)
 
+        // ── 设置对话框内容并显示 ──
+        dialog.setView(dialogView)
         dialog.window?.setBackgroundDrawable(
             GradientDrawable().apply {
                 setColor(Color.WHITE)
                 setCornerRadius(20 * dp)
             }
         )
-
         dialog.show()
 
         // ── 底部按钮（自定义，替代默认按钮） ──
@@ -477,6 +539,18 @@ object AppUpdateHelper {
     fun showLatestDialog(activity: Activity, info: UpdateInfo) {
         val dp = activity.resources.displayMetrics.density
 
+        // 先创建 dialog（需要提前声明，因为后面点击事件要用）
+        val dialog = AlertDialog.Builder(activity)
+            .setCancelable(true)
+            .create()
+
+        dialog.window?.setBackgroundDrawable(
+            GradientDrawable().apply {
+                setColor(Color.WHITE)
+                setCornerRadius(20 * dp)
+            }
+        )
+
         val contentView = LinearLayout(activity).apply {
             orientation = LinearLayout.VERTICAL
             gravity = Gravity.CENTER_HORIZONTAL
@@ -524,30 +598,76 @@ object AppUpdateHelper {
                 textSize = 14f
                 setTextColor(Color.parseColor("#5F6368"))
                 gravity = Gravity.CENTER
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply { bottomMargin = (16 * dp).toInt() }
             })
+
+            // ── 推荐：雷聊输入法 ──
+            val kbCard = LinearLayout(activity).apply {
+                orientation = LinearLayout.HORIZONTAL
+                gravity = Gravity.CENTER_VERTICAL
+                setPadding((14 * dp).toInt(), (10 * dp).toInt(), (14 * dp).toInt(), (10 * dp).toInt())
+                background = GradientDrawable().apply {
+                    setColor(Color.parseColor("#F8F9FA"))
+                    setCornerRadius(12 * dp)
+                }
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                )
+            }
+            kbCard.addView(TextView(activity).apply {
+                text = "⌨️"
+                textSize = 24f
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply { marginEnd = (10 * dp).toInt() }
+            })
+            kbCard.addView(LinearLayout(activity).apply {
+                orientation = LinearLayout.VERTICAL
+                layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+                addView(TextView(activity).apply {
+                    text = "雷聊输入法"
+                    textSize = 14f
+                    setTypeface(null, Typeface.BOLD)
+                    setTextColor(Color.parseColor("#1F1F1F"))
+                    layoutParams = LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                    ).apply { bottomMargin = (2 * dp).toInt() }
+                })
+                addView(TextView(activity).apply {
+                    text = "高效、安全、个性化的智能输入体验"
+                    textSize = 12f
+                    setTextColor(Color.parseColor("#5F6368"))
+                })
+            })
+            kbCard.addView(TextView(activity).apply {
+                text = "›"
+                textSize = 20f
+                setTextColor(Color.parseColor("#9AA0A6"))
+                gravity = Gravity.CENTER
+            })
+            kbCard.setOnClickListener {
+                dialog.dismiss()
+                KeyboardIntroDialog.show(activity)
+            }
+            addView(kbCard)
         }
 
-        val dialog = AlertDialog.Builder(activity)
-            .setView(contentView)
-            .setCancelable(true)
-            .create()
-
-        dialog.window?.setBackgroundDrawable(
-            GradientDrawable().apply {
-                setColor(Color.WHITE)
-                setCornerRadius(20 * dp)
-            }
-        )
-
+        dialog.setContentView(contentView)
         dialog.show()
 
-        // "确定" 按钮
+        // "好的" 按钮
         val btnContainer = LinearLayout(activity).apply {
             orientation = LinearLayout.HORIZONTAL
             setPadding((24 * dp).toInt(), (8 * dp).toInt(), (24 * dp).toInt(), (20 * dp).toInt())
             gravity = Gravity.CENTER
         }
-        val okBtn = TextView(activity).apply {
+        btnContainer.addView(TextView(activity).apply {
             text = "好的"
             textSize = 15f
             setTypeface(null, Typeface.BOLD)
@@ -562,12 +682,11 @@ object AppUpdateHelper {
                 setCornerRadius(12 * dp)
             }
             setOnClickListener { dialog.dismiss() }
-        }
-        btnContainer.addView(okBtn)
+        })
 
         dialog.window?.setContentView(LinearLayout(activity).apply {
             orientation = LinearLayout.VERTICAL
-            addView(contentView.parent as View)
+            addView(contentView)
             addView(btnContainer)
         })
     }
