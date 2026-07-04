@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "c309430dce3f239cf9d7d4960451d56e",
-    "publishedAt":  1783171336832,
-    "changelog":  "v1.4.0 hotfix b100: fix in-app update download (mirror order + CDN cache tolerance)",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=c309430dce3f239cf9d7d4960451d56e",
+    "buildId":  "5802b4094753d62944484bfdd66b158d",
+    "publishedAt":  1783171512314,
+    "changelog":  "v1.4.0 hotfix b101: Leiliao Team chat footer - version update, account help, support center",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=5802b4094753d62944484bfdd66b158d",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=c309430dce3f239cf9d7d4960451d56e",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=c309430dce3f239cf9d7d4960451d56e",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=c309430dce3f239cf9d7d4960451d56e"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=5802b4094753d62944484bfdd66b158d",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=5802b4094753d62944484bfdd66b158d",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=5802b4094753d62944484bfdd66b158d"
                       ],
     "hasUpdate":  true
 }
