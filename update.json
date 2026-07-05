@@ -1,23 +1,20 @@
 {
     "ok":  true,
-    "versionCode":  70,
-    "versionName":  "1.4.2",
-    "buildId":  "46fba864e04ebaeac490fb04325f2ccd",
-    "publishedAt":  1783238820497,
-    "changelog":  "更新检查与下载增加多镜像自动切换，优先 ghproxy 提升国内可达性; 下载支持 HTTP 重定向与更长超时，弱网环境更稳定; 安装兼容小米/华为/OPPO/vivo 等机型，自动授权安装器读取更新包; 下载失败时可一键跳转浏览器安装，检查失败支持重试; 拒绝安装 CDN 旧包，仅接受版本更高或同版本新 build 的更新包; 删除好友后可重新发起加好友申请",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=46fba864e04ebaeac490fb04325f2ccd",
+    "versionCode":  71,
+    "versionName":  "1.4.3",
+    "buildId":  "3017bd1e6dcb50147d48d6ee580d5194",
+    "publishedAt":  1783238961479,
+    "changelog":  "加号面板采用圆角渐变磁贴与白色矢量图标，整体更接近微信风格; 修正视频通话、语音通话、位置、U盘等入口图标错位问题; 两页功能增加底部分页圆点指示，面板背景与间距优化",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=3017bd1e6dcb50147d48d6ee580d5194",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=46fba864e04ebaeac490fb04325f2ccd",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=46fba864e04ebaeac490fb04325f2ccd",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=46fba864e04ebaeac490fb04325f2ccd"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=3017bd1e6dcb50147d48d6ee580d5194",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=3017bd1e6dcb50147d48d6ee580d5194",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=3017bd1e6dcb50147d48d6ee580d5194"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
-                           "更新检查与下载增加多镜像自动切换，优先 ghproxy 提升国内可达性",
-                           "下载支持 HTTP 重定向与更长超时，弱网环境更稳定",
-                           "安装兼容小米/华为/OPPO/vivo 等机型，自动授权安装器读取更新包",
-                           "下载失败时可一键跳转浏览器安装，检查失败支持重试",
-                           "拒绝安装 CDN 旧包，仅接受版本更高或同版本新 build 的更新包",
-                           "删除好友后可重新发起加好友申请"
+                           "加号面板采用圆角渐变磁贴与白色矢量图标，整体更接近微信风格",
+                           "修正视频通话、语音通话、位置、U盘等入口图标错位问题",
+                           "两页功能增加底部分页圆点指示，面板背景与间距优化"
                        ]
 }
