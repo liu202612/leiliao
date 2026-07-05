@@ -1,24 +1,23 @@
 {
     "ok":  true,
-    "versionCode":  69,
-    "versionName":  "1.4.1",
-    "buildId":  "a30c790803d3be9e89274a9c77f35729",
-    "publishedAt":  1783236892623,
-    "changelog":  "游戏页四个入口分别进入对应详情与玩法，不再全部跳转斗地主; 新增贪吃蛇、消消乐小游戏，俄罗斯方块与斗地主保持独立界面; 修复收到好友请求时铃声反复响不停的问题; 同一好友重复请求不再重复弹通知，系统铃声自动停止; 好友圈子发动态与评论支持选图，评论页可发方形图片; 修复语音消息点击无法播放、发送语音闪退等问题; 优化语音识别准确度，系统听写优先、离线 Vosk 兜底",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a30c790803d3be9e89274a9c77f35729",
+    "versionCode":  70,
+    "versionName":  "1.4.2",
+    "buildId":  "51cd58422021b43976e887039186899e",
+    "publishedAt":  1783237912409,
+    "changelog":  "更新检查与下载增加多镜像自动切换，优先 ghproxy 提升国内可达性; 下载支持 HTTP 重定向与更长超时，弱网环境更稳定; 安装兼容小米/华为/OPPO/vivo 等机型，自动授权安装器读取更新包; 下载失败时可一键跳转浏览器安装，检查失败支持重试; 拒绝安装 CDN 旧包，仅接受版本更高或同版本新 build 的更新包; 删除好友后可重新发起加好友申请",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=51cd58422021b43976e887039186899e",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a30c790803d3be9e89274a9c77f35729",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a30c790803d3be9e89274a9c77f35729",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a30c790803d3be9e89274a9c77f35729"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=51cd58422021b43976e887039186899e",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=51cd58422021b43976e887039186899e",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=51cd58422021b43976e887039186899e"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
-                           "游戏页四个入口分别进入对应详情与玩法，不再全部跳转斗地主",
-                           "新增贪吃蛇、消消乐小游戏，俄罗斯方块与斗地主保持独立界面",
-                           "修复收到好友请求时铃声反复响不停的问题",
-                           "同一好友重复请求不再重复弹通知，系统铃声自动停止",
-                           "好友圈子发动态与评论支持选图，评论页可发方形图片",
-                           "修复语音消息点击无法播放、发送语音闪退等问题",
-                           "优化语音识别准确度，系统听写优先、离线 Vosk 兜底"
+                           "更新检查与下载增加多镜像自动切换，优先 ghproxy 提升国内可达性",
+                           "下载支持 HTTP 重定向与更长超时，弱网环境更稳定",
+                           "安装兼容小米/华为/OPPO/vivo 等机型，自动授权安装器读取更新包",
+                           "下载失败时可一键跳转浏览器安装，检查失败支持重试",
+                           "拒绝安装 CDN 旧包，仅接受版本更高或同版本新 build 的更新包",
+                           "删除好友后可重新发起加好友申请"
                        ]
 }
