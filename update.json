@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "d4754c239b00cc33eab28b79448f60c3",
-    "publishedAt":  1783233962705,
+    "buildId":  "093d4c4e37b8c5e01ba0e2d603b2b05a",
+    "publishedAt":  1783234193498,
     "changelog":  "经典表情扩充至84个，覆盖常用笑脸与情绪; 手势60个、爱心/动物/食物/自然/物品各36个; 聊天表情面板与发现-表情商店共用完整数据，支持滚动浏览",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=d4754c239b00cc33eab28b79448f60c3",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=093d4c4e37b8c5e01ba0e2d603b2b05a",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=d4754c239b00cc33eab28b79448f60c3",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=d4754c239b00cc33eab28b79448f60c3",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=d4754c239b00cc33eab28b79448f60c3"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=093d4c4e37b8c5e01ba0e2d603b2b05a",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=093d4c4e37b8c5e01ba0e2d603b2b05a",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=093d4c4e37b8c5e01ba0e2d603b2b05a"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
