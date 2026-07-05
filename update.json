@@ -2,19 +2,19 @@
     "ok":  true,
     "versionCode":  68,
     "versionName":  "1.4.0",
-    "buildId":  "a7cc24dc95912b210afd43a4f286c56d",
-    "publishedAt":  1783177409470,
-    "changelog":  "私聊、群聊、服务号表情选择器默认展示经典表情; 经典表情（笑脸系列）作为第一个分类标签; 与表情商店经典表情包内容保持一致",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a7cc24dc95912b210afd43a4f286c56d",
+    "buildId":  "1e23a83e674558d335fde71314f37f23",
+    "publishedAt":  1783214654921,
+    "changelog":  "经典表情从 24 个扩充至 88 个常用笑脸与情绪表情; 表情面板支持上下滑动浏览全部经典表情; 私聊、群聊、服务号表情选择器同步更新",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=1e23a83e674558d335fde71314f37f23",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=a7cc24dc95912b210afd43a4f286c56d",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a7cc24dc95912b210afd43a4f286c56d",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=a7cc24dc95912b210afd43a4f286c56d"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=1e23a83e674558d335fde71314f37f23",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=1e23a83e674558d335fde71314f37f23",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=1e23a83e674558d335fde71314f37f23"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
-                           "私聊、群聊、服务号表情选择器默认展示经典表情",
-                           "经典表情（笑脸系列）作为第一个分类标签",
-                           "与表情商店经典表情包内容保持一致"
+                           "经典表情从 24 个扩充至 88 个常用笑脸与情绪表情",
+                           "表情面板支持上下滑动浏览全部经典表情",
+                           "私聊、群聊、服务号表情选择器同步更新"
                        ]
 }
