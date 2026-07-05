@@ -1,20 +1,24 @@
 {
     "ok":  true,
-    "versionCode":  68,
-    "versionName":  "1.4.0",
-    "buildId":  "d5dc2f0bb537441ee377be941b91b33a",
-    "publishedAt":  1783236545223,
-    "changelog":  "经典表情扩充至84个，覆盖常用笑脸与情绪; 手势60个、爱心/动物/食物/自然/物品各36个; 聊天表情面板与发现-表情商店共用完整数据，支持滚动浏览",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=d5dc2f0bb537441ee377be941b91b33a",
+    "versionCode":  69,
+    "versionName":  "1.4.1",
+    "buildId":  "9a7b61b5441ca1f223a05ab92b563c41",
+    "publishedAt":  1783236716659,
+    "changelog":  "游戏页四个入口分别进入对应详情与玩法，不再全部跳转斗地主; 新增贪吃蛇、消消乐小游戏，俄罗斯方块与斗地主保持独立界面; 修复收到好友请求时铃声反复响不停的问题; 同一好友重复请求不再重复弹通知，系统铃声自动停止; 好友圈子发动态与评论支持选图，评论页可发方形图片; 修复语音消息点击无法播放、发送语音闪退等问题; 优化语音识别准确度，系统听写优先、离线 Vosk 兜底",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=9a7b61b5441ca1f223a05ab92b563c41",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=d5dc2f0bb537441ee377be941b91b33a",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=d5dc2f0bb537441ee377be941b91b33a",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=d5dc2f0bb537441ee377be941b91b33a"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=9a7b61b5441ca1f223a05ab92b563c41",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9a7b61b5441ca1f223a05ab92b563c41",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=9a7b61b5441ca1f223a05ab92b563c41"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
-                           "经典表情扩充至84个，覆盖常用笑脸与情绪",
-                           "手势60个、爱心/动物/食物/自然/物品各36个",
-                           "聊天表情面板与发现-表情商店共用完整数据，支持滚动浏览"
+                           "游戏页四个入口分别进入对应详情与玩法，不再全部跳转斗地主",
+                           "新增贪吃蛇、消消乐小游戏，俄罗斯方块与斗地主保持独立界面",
+                           "修复收到好友请求时铃声反复响不停的问题",
+                           "同一好友重复请求不再重复弹通知，系统铃声自动停止",
+                           "好友圈子发动态与评论支持选图，评论页可发方形图片",
+                           "修复语音消息点击无法播放、发送语音闪退等问题",
+                           "优化语音识别准确度，系统听写优先、离线 Vosk 兜底"
                        ]
 }
