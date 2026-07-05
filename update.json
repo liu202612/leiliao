@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  71,
     "versionName":  "1.4.3",
-    "buildId":  "cd1c93c830f661bd641f2bb5db94d861",
-    "publishedAt":  1783240102800,
+    "buildId":  "8a69a15c7f3d9362887c980d19746a88",
+    "publishedAt":  1783240422801,
     "changelog":  "加号面板采用圆角渐变磁贴与白色矢量图标，整体更接近微信风格; 修正视频通话、语音通话、位置、U盘等入口图标错位问题; 两页功能增加底部分页圆点指示，面板背景与间距优化",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=cd1c93c830f661bd641f2bb5db94d861",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=8a69a15c7f3d9362887c980d19746a88",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=cd1c93c830f661bd641f2bb5db94d861",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cd1c93c830f661bd641f2bb5db94d861",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=cd1c93c830f661bd641f2bb5db94d861"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=8a69a15c7f3d9362887c980d19746a88",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=8a69a15c7f3d9362887c980d19746a88",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=8a69a15c7f3d9362887c980d19746a88"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
