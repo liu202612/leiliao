@@ -3,7 +3,7 @@
     "versionCode":  72,
     "versionName":  "1.4.4",
     "buildId":  "0e47345efc29a8f22530ef64143e88d2",
-    "publishedAt":  1784094048218,
+    "publishedAt":  1784094077842,
     "changelog":  "修复应用内更新安装失败（解析软件包出现问题）; 安装改为优先使用系统会话安装，避免文件路径错位; 修复好友资料、加删好友与附近的人相关问题",
     "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=0e47345efc29a8f22530ef64143e88d2",
     "mirrorApkUrls":  [
