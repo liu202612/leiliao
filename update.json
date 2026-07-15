@@ -2,20 +2,19 @@
     "ok":  true,
     "versionCode":  72,
     "versionName":  "1.4.4",
-    "buildId":  "95f14b42dfec77c21e3db1e4ad6dc056",
-    "publishedAt":  1784092765561,
-    "changelog":  "修复好友资料页昵称/雷聊号/地区显示错误; 修复删除好友后仍出现在通讯录、加好友双方新的朋友不显示; 修复附近的人误删同名用户、发现更稳定; 保留局域网与云端双通道发现",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=95f14b42dfec77c21e3db1e4ad6dc056",
+    "buildId":  "0e47345efc29a8f22530ef64143e88d2",
+    "publishedAt":  1784094048218,
+    "changelog":  "修复应用内更新安装失败（解析软件包出现问题）; 安装改为优先使用系统会话安装，避免文件路径错位; 修复好友资料、加删好友与附近的人相关问题",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=0e47345efc29a8f22530ef64143e88d2",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=95f14b42dfec77c21e3db1e4ad6dc056",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=95f14b42dfec77c21e3db1e4ad6dc056",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=95f14b42dfec77c21e3db1e4ad6dc056"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=0e47345efc29a8f22530ef64143e88d2",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=0e47345efc29a8f22530ef64143e88d2",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=0e47345efc29a8f22530ef64143e88d2"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
-                           "修复好友资料页昵称/雷聊号/地区显示错误",
-                           "修复删除好友后仍出现在通讯录、加好友双方新的朋友不显示",
-                           "修复附近的人误删同名用户、发现更稳定",
-                           "保留局域网与云端双通道发现"
+                           "修复应用内更新安装失败（解析软件包出现问题）",
+                           "安装改为优先使用系统会话安装，避免文件路径错位",
+                           "修复好友资料、加删好友与附近的人相关问题"
                        ]
 }
