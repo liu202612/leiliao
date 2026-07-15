@@ -2,14 +2,14 @@
     "ok":  true,
     "versionCode":  72,
     "versionName":  "1.4.4",
-    "buildId":  "4418a8cbff8ac20f9e262c8376b12735",
-    "publishedAt":  1784092540837,
+    "buildId":  "95f14b42dfec77c21e3db1e4ad6dc056",
+    "publishedAt":  1784092634988,
     "changelog":  "发现页新增视频入口; 游戏斗地主升级为新版对战; 扫一扫支持物品识别模式; 接入最新基座能力并保留钱包转账等既有功能",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=4418a8cbff8ac20f9e262c8376b12735",
+    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=95f14b42dfec77c21e3db1e4ad6dc056",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=4418a8cbff8ac20f9e262c8376b12735",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=4418a8cbff8ac20f9e262c8376b12735",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=4418a8cbff8ac20f9e262c8376b12735"
+                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=95f14b42dfec77c21e3db1e4ad6dc056",
+                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=95f14b42dfec77c21e3db1e4ad6dc056",
+                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=95f14b42dfec77c21e3db1e4ad6dc056"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
