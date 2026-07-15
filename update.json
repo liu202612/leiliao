@@ -1,20 +1,20 @@
 {
     "ok":  true,
-    "versionCode":  72,
-    "versionName":  "1.4.4",
-    "buildId":  "d1e21f8a69cb59eb1e83b989e8fb137d",
-    "publishedAt":  1784116670010,
-    "changelog":  "修复应用内更新安装失败（解析软件包出现问题）; 安装改为优先使用系统会话安装，避免文件路径错位; 修复好友资料、加删好友与附近的人相关问题",
-    "downloadUrl":  "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=d1e21f8a69cb59eb1e83b989e8fb137d",
+    "versionCode":  80,
+    "versionName":  "1.5.2",
+    "buildId":  "65c586f257f45a9b1fcbc4e3941e700c",
+    "publishedAt":  1784129313356,
+    "changelog":  "Ignore leftover ACC after delete so contact stays removed; Delete with lei id aliases and refresh contact list immediately; Only re-add after user sends a new friend request and peer accepts",
+    "downloadUrl":  "http://183.146.215.78:36030/leiliao/leiliao.apk?v=65c586f257f45a9b1fcbc4e3941e700c",
     "mirrorApkUrls":  [
-                          "https://cdn.jsdelivr.net/gh/liu202612/leiliao@main/leiliao.apk?v=d1e21f8a69cb59eb1e83b989e8fb137d",
-                          "https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=d1e21f8a69cb59eb1e83b989e8fb137d",
-                          "https://ghproxy.net/https://raw.githubusercontent.com/liu202612/leiliao/main/leiliao.apk?v=d1e21f8a69cb59eb1e83b989e8fb137d"
+                          "http://183.146.215.78:36030/leiliao/leiliao.apk?v=65c586f257f45a9b1fcbc4e3941e700c",
+                          "http://epc.leiliao.top:36030/leiliao/leiliao.apk?v=65c586f257f45a9b1fcbc4e3941e700c",
+                          "http://183.146.215.78:46963/leiliao/leiliao.apk?v=65c586f257f45a9b1fcbc4e3941e700c"
                       ],
     "hasUpdate":  false,
     "changelogItems":  [
-                           "修复应用内更新安装失败（解析软件包出现问题）",
-                           "安装改为优先使用系统会话安装，避免文件路径错位",
-                           "修复好友资料、加删好友与附近的人相关问题"
+                           "Ignore leftover ACC after delete so contact stays removed",
+                           "Delete with lei id aliases and refresh contact list immediately",
+                           "Only re-add after user sends a new friend request and peer accepts"
                        ]
 }
